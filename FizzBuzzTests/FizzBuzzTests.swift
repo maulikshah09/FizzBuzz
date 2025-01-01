@@ -12,22 +12,22 @@ import Testing
 struct FizzBuzzTests {
     
     @Test("Print Number Only")
-    func test_print_number()  {
+    func print_number()  {
         expect(1, withResult: "1")
     }
    
     @Test("Print Fizz when number is multiple of three",arguments: [3,6,9])
-    func test_print_numberIsMultipleOf3(number : Int){
+    func print_numberIsMultipleOf3(number : Int){
         expect(number, withResult: "Fizz")
     }
     
     @Test("Print Buzz when number is multiple of Five",arguments: [5,10,20])
-    func test_print_numberIsMultipleOf5(number : Int) {
+    func print_numberIsMultipleOf5(number : Int) {
         expect(number, withResult: "Buzz")
     }
     
-    @Test("Print Buzz when number is multiple of fiften",arguments: [30,60,75])
-    func test_print_numberIsMulitpleOfFifften(number : Int){
+    @Test("Print Buzz when number is multiple of fifteen",arguments: [30,60,75])
+    func print_numberIsMulitpleOfFifteen(number : Int){
         expect(number, withResult: "FizzBuzz")
     }
     
