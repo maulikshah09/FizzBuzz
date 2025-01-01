@@ -16,25 +16,19 @@ struct FizzBuzzTests {
         expect(1, withResult: "1")
     }
    
-    @Test("Print Fizz when number is multiple of three")
-    func test_print_numberIsMultipleOf3(){
-        expect(3, withResult: "Fizz")
-        expect(6, withResult: "Fizz")
-        expect(9, withResult: "Fizz")
+    @Test("Print Fizz when number is multiple of three",arguments: [3,6,9])
+    func test_print_numberIsMultipleOf3(number : Int){
+        expect(number, withResult: "Fizz")
     }
     
-    @Test("Print Buzz when number is multiple of Five")
-    func test_print_numberIsMultipleOf5() {
-        expect(5, withResult: "Buzz")
-        expect(10, withResult: "Buzz")
-        expect(20, withResult: "Buzz")
+    @Test("Print Buzz when number is multiple of Five",arguments: [5,10,20])
+    func test_print_numberIsMultipleOf5(number : Int) {
+        expect(number, withResult: "Buzz")
     }
     
-    @Test("Print Buzz when number is multiple of fiften")
-    func test_print_numberIsMulitpleOfFifften(){
-        expect(30, withResult: "FizzBuzz")
-        expect(60, withResult: "FizzBuzz")
-        expect(75, withResult: "FizzBuzz")
+    @Test("Print Buzz when number is multiple of fiften",arguments: [30,60,75])
+    func test_print_numberIsMulitpleOfFifften(number : Int){
+        expect(number, withResult: "FizzBuzz")
     }
     
     // Mark :- Healper
